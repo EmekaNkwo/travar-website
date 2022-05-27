@@ -1,0 +1,22 @@
+//Colors
+$primary-color: #003580;
+$secondary-color: #0071c2;
+$white-color: #fff;
+$black-color: black;
+$search-gray: rgb(72, 72, 72);
+
+//Fonts
+$baseFont: "Quicksand", sans-serif;
+$baseFontLight: 400;
+$baseFontBold: 700;
+
+//buttonStyles
+@mixin ButtonStyle {
+  font-family: $baseFont;
+  font-weight: $baseFontBold;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+}

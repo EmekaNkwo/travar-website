@@ -1,5 +1,5 @@
 .navbar {
-  height: 60px;
+  height: 80px;
   background-color: #003580;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,14 +25,26 @@
 }
 
 .navbar .navContainer .logo {
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
 .navbar .navContainer .navButton {
   margin-left: 1.1rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
   border: none;
-  padding: 5px 10px;
+  padding: 1rem;
   cursor: pointer;
+  border-radius: 0.8rem;
+  font-size: 1rem;
   color: #003580;
+}
+
+.navbar .navContainer .navButton:hover {
+  background-color: #0071c2;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=Navbar.css.map */

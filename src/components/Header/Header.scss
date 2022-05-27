@@ -1,15 +1,16 @@
-@import "../../constants/colors";
+@import "../../constants/variables";
 
 @mixin flexMe {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .header {
   background-color: $primary-color;
   color: $white-color;
+  position: relative;
   @include flexMe;
+  justify-content: center;
 
   .headerContainer {
     width: 100%;
@@ -18,17 +19,19 @@
 
     .headerList {
       display: flex;
-      gap: 2rem;
+      gap: 3.5rem;
+      margin-bottom: 50px;
 
       .headerListItem {
-        @include flexMe;
+        display: flex;
+        align-items: center;
         gap: 0.9rem;
       }
 
       .headerListItem.active {
         border: 1px solid $white-color;
         padding: 0.7rem;
-        border-radius: 1.1rem;
+        border-radius: 0.8rem;
       }
     }
 
@@ -39,6 +42,91 @@
     .headerBtn {
       background-color: $secondary-color;
       color: $white-color;
+      @include ButtonStyle;
+    }
+
+    .headerSearch {
+      height: 50px;
+      background-color: $white-color;
+      filter: drop-shadow(1px 1px 3px #363636);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 2rem 0px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: -25px;
+      width: 100%;
+      max-width: 1024px;
+
+      .headerSearchItem {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .headerSearchInput {
+          border: none;
+          outline: none;
+          font-size: 1rem;
+          font-family: $baseFont;
+        }
+
+        .headerIcon {
+          color: $search-gray;
+        }
+
+        .headerSearchText {
+          color: $search-gray;
+          cursor: pointer;
+          font-family: $baseFont;
+        }
+
+        .options {
+          z-index: 2;
+          position: absolute;
+          top: 50px;
+
+          background-color: $white-color;
+          color: $search-gray;
+          border-radius: 5px;
+          -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+        }
+
+        .optionItem {
+          width: 250px;
+          display: flex;
+          justify-content: space-between;
+          margin: 10px;
+        }
+
+        .optionCounter {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 12px;
+          color: black;
+        }
+
+        .optionCounterButton {
+          width: 30px;
+          height: 30px;
+          border: 1px solid $secondary-color;
+          color: $secondary-color;
+          cursor: pointer;
+          background-color: white;
+        }
+
+        .optionCounterButton:disabled {
+          cursor: not-allowed;
+        }
+
+        .date {
+          position: absolute;
+          top: 50px;
+          z-index: 2;
+        }
+      }
     }
   }
 }
