@@ -1,0 +1,44 @@
+@import "../../constants/colors";
+
+@mixin flexMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: $primary-color;
+  color: $white-color;
+  @include flexMe;
+
+  .headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 1.2rem 0 6rem 0;
+
+    .headerList {
+      display: flex;
+      gap: 2rem;
+
+      .headerListItem {
+        @include flexMe;
+        gap: 0.9rem;
+      }
+
+      .headerListItem.active {
+        border: 1px solid $white-color;
+        padding: 0.7rem;
+        border-radius: 1.1rem;
+      }
+    }
+
+    .headerDesc {
+      margin: 1.2rem 0;
+    }
+
+    .headerBtn {
+      background-color: $secondary-color;
+      color: $white-color;
+    }
+  }
+}

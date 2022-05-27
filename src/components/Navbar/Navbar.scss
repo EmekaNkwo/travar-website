@@ -1,0 +1,29 @@
+@import "../../constants/colors";
+
+.navbar {
+  height: 60px;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+
+  .navContainer {
+    width: 100%;
+    max-width: 1024px;
+    color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      font-weight: 500;
+    }
+
+    .navButton {
+      margin-left: 1.1rem;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      color: $primary-color;
+    }
+  }
+}
