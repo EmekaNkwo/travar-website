@@ -58,6 +58,7 @@
       bottom: -25px;
       width: 100%;
       max-width: 1024px;
+      z-index: 2;
 
       .headerSearchItem {
         display: flex;
@@ -82,7 +83,6 @@
         }
 
         .options {
-          z-index: 2;
           position: absolute;
           top: 50px;
 
@@ -123,9 +123,12 @@
         .date {
           position: absolute;
           top: 50px;
-          z-index: 2;
         }
       }
     }
+  }
+
+  .headerContainer.listMode {
+    margin: 1.2rem 0 0 0;
   }
 }
