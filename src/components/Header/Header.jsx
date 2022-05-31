@@ -11,6 +11,7 @@ import "react-date-range/dist/theme/default.css";
 function Header({ type }) {
   const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
+
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -28,6 +29,7 @@ function Header({ type }) {
     room: 1,
   });
 
+  //navigating function
   const navigate = useNavigate();
 
   const handleOption = (name, operation) => {
@@ -39,6 +41,7 @@ function Header({ type }) {
     });
   };
 
+  //handles the hotel search
   const handleSearch = () => {
     navigate("/hotellist", { state: { destination, date, options } });
   };

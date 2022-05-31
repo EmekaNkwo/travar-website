@@ -1,0 +1,105 @@
+.listContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.listContainer .listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.listContainer .listWrapper .listSearch {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #febb02;
+  padding: 10px;
+  border-radius: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.listContainer .listWrapper .listSearch .listSearch > button {
+  padding: 10px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.listContainer .listWrapper .listSearch .lsTitle {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.listContainer .listWrapper .listSearch .lsItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.listContainer .listWrapper .listSearch .lsItem .lsItem > label {
+  font-size: 12px;
+}
+
+.listContainer .listWrapper .listSearch .lsItem .lsItem > span {
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.listContainer .listWrapper .listSearch .lsItem .lsOptions {
+  padding: 10px;
+}
+
+.listContainer .listWrapper .listSearch .lsItem .lsOptions .lsOptionItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 12px;
+}
+
+.listContainer .listWrapper .listSearch .lsItem .lsOptions .lsOptionItem .lsOptionInput {
+  width: 50px;
+}
+
+.listContainer .listWrapper .listResult {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+/*# sourceMappingURL=hotelList.css.map */
