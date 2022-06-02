@@ -3,12 +3,8 @@ import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
 import MailList from "../../components/mailList/MailList";
 import Footer from "../../components/footer/Footer";
-import {
-  FaCircleArrowLeft,
-  FaCircleArrowRight,
-  FaCircleXmark,
-  FaLocationDot,
-} from "react-icons/fa";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import { MdLocationPin, MdCancel } from "react-icons/md";
 import { useState } from "react";
 
 const Hotel = () => {
@@ -60,15 +56,15 @@ const Hotel = () => {
       <div className="hotelContainer">
         {open && (
           <div className="slider">
-            <FaCircleXmark className="close" onClick={() => setOpen(false)} />
-            <FaCircleArrowLeft
+            <MdCancel className="close" onClick={() => setOpen(false)} />
+            <FaArrowAltCircleLeft
               className="arrow"
               onClick={() => handleMove("l")}
             />
             <div className="sliderWrapper">
               <img src={photos[slideNumber].src} alt="" className="sliderImg" />
             </div>
-            <FaCircleArrowRight
+            <FaArrowAltCircleRight
               className="arrow"
               onClick={() => handleMove("r")}
             />
@@ -78,7 +74,7 @@ const Hotel = () => {
           <button className="bookNow">Reserve or Book Now!</button>
           <h1 className="hotelTitle">Tower Street Apartments</h1>
           <div className="hotelAddress">
-            <FaLocationDot />
+            <MdLocationPin />
             <span>Elton St 125 New york</span>
           </div>
           <span className="hotelDistance">
