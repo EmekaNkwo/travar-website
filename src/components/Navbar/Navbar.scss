@@ -1,14 +1,15 @@
 @import "../../constants/variables";
 
 .navbar {
-  height: 80px;
+  height: 70px;
+  padding: 0 2rem;
   background-color: $primary-color;
   display: flex;
   justify-content: center;
 
   .navContainer {
     width: 100%;
-    max-width: 1024px;
+
     color: $white-color;
     display: flex;
     align-items: center;
@@ -17,6 +18,22 @@
     .logo {
       font-size: 1.3rem;
       font-weight: 500;
+    }
+
+    .navList {
+      display: flex;
+      align-items: center;
+      gap: 4.5rem;
+      list-style: none;
+
+      .navListLink {
+        color: white;
+        font-size: 1.1rem;
+        text-decoration: none;
+        font-weight: $baseFontBold;
+
+      }
+
     }
 
     .navButton {
@@ -30,5 +47,12 @@
         transition: 0.3s;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navContainer {
+    padding: 0 0;
+    max-width: 1200px;
   }
 }

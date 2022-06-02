@@ -8,18 +8,15 @@ $search-gray: rgb(72, 72, 72);
 //Fonts
 $baseFont: "Quicksand", sans-serif;
 $baseFontLight: 400;
-$baseFontBold: 700;
-
-//screen width
-$mainWidth: 1200px;
-$smallWidth: 960px;
+$baseFontBold: 600;
 
 //buttonStyles
 @mixin ButtonStyle {
   font-family: $baseFont;
   font-weight: $baseFontBold;
   border: none;
-  padding: 1rem;
+
+  padding: 1rem 2rem;
   cursor: pointer;
   border-radius: 0.8rem;
   font-size: 1rem;

@@ -29,9 +29,9 @@
 
 .mail .mailInputContainer > button {
   font-family: "Quicksand", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   border: none;
-  padding: 1rem;
+  padding: 1rem 2rem;
   cursor: pointer;
   border-radius: 0.8rem;
   font-size: 1rem;

@@ -1,5 +1,6 @@
 .navbar {
-  height: 80px;
+  height: 70px;
+  padding: 0 2rem;
   background-color: #003580;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,7 +12,6 @@
 
 .navbar .navContainer {
   width: 100%;
-  max-width: 1024px;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,12 +29,30 @@
   font-weight: 500;
 }
 
+.navbar .navContainer .navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4.5rem;
+  list-style: none;
+}
+
+.navbar .navContainer .navList .navListLink {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .navbar .navContainer .navButton {
   margin-left: 1.1rem;
   font-family: "Quicksand", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   border: none;
-  padding: 1rem;
+  padding: 1rem 2rem;
   cursor: pointer;
   border-radius: 0.8rem;
   font-size: 1rem;
@@ -46,5 +64,12 @@
   color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media only screen and (min-width: 1200px) {
+  .navContainer {
+    padding: 0 0;
+    max-width: 1200px;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

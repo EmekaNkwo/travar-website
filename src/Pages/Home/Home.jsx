@@ -1,17 +1,17 @@
 import Featured from "../../components/featured/Featured";
 import FeaturedProperties from "../../components/featuredProperties/FeaturedProperties";
-import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
 import MailList from "../../components/mailList/MailList";
 import PropertyList from "../../components/propertyList/PropertyList";
 import Footer from "../../components/footer/Footer";
 import "./Home.css";
+import LandingPage from "../../components/LandingPage/LandingPage";
 
 function Home() {
   return (
     <>
       <Navbar />
-      <Header />
+      <LandingPage />
 
       <div className="homeContainer">
         <Featured />
