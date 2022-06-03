@@ -1,43 +1,40 @@
 @import "../../constants/variables";
 
 .pageContainer {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #595959;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/images/bg1.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #595959;
 
-    .pageWrapper {
-        text-align: center;
-        color: $white-color;
-
-
-        .pageTitle {
-            font-size: 3rem;
-            font-weight: $baseFontBold;
-            margin-bottom: 1rem;
-        }
-
-        .pageDesc {
-            font-size: 1.1rem;
-            font-weight: $baseFontLight;
-            margin-bottom: 1rem;
-        }
-
-        .pageBtn {
-            @include ButtonStyle;
-            color: $primary-color;
-
-            &:hover {
-                background-color: $secondary-color;
-                color: $white-color;
-                transition: 0.3s;
-            }
-        }
-
-
-
+  .pageWrapper {
+    text-align: center;
+    color: $white-color;
+    .pageTitle {
+      font-size: 3rem;
+      font-weight: $baseFontBold;
+      margin-bottom: 1rem;
     }
+
+    .pageDesc {
+      font-size: 1.1rem;
+      font-weight: $baseFontLight;
+      margin-bottom: 1rem;
+    }
+
+    .pageBtn {
+      @include ButtonStyle;
+      color: $primary-color;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: $white-color;
+        transition: 0.3s;
+      }
+    }
+  }
 }
