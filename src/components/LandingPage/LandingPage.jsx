@@ -1,18 +1,33 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation, EffectFade } from "swiper";
+
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import BG1 from "../../assets/images/bg2.jpg";
+import BG2 from "../../assets/images/bg1.jpg";
+
 import "./landingPage.css";
 
 function LandingPage() {
   return (
-    <div className="pageContainer">
-      <div className="pageWrapper">
-        <div className="pageContent">
-          <h1 className="pageTitle">A Lifetime of discounts? It's Genius.</h1>
-          <p className="pageDesc">
-            Get rewarded for travels - unlock instant savings of 10% or more
-            with a free Travar account.
-          </p>
-          <button className="pageBtn"> Sign In / Register</button>
-        </div>
-      </div>
+    <div div className="pageContainer">
+      <Swiper
+        slidesPerView={1}
+        modules={[Navigation, EffectFade]}
+        navigation
+        effect
+        speed={800}
+        loop
+        className="myswiper"
+      >
+        <SwiperSlide className="swiper-slide">
+          <img src={BG1} alt="bg1" />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <img src={BG2} alt="bg1" />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }
