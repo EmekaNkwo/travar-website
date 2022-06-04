@@ -14,4 +14,21 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.pageContainer .swiper-button-next,
+.pageContainer .swiper-button-prev {
+  color: #fff;
+  border-radius: 50%;
+  padding: 0 2rem;
+}
+
+.pageContainer .swiper-button-next:hover,
+.pageContainer .swiper-button-prev:hover {
+  color: aqua;
+}
+
+.pageContainer .swiper-button-next:active,
+.pageContainer .swiper-button-prev:active {
+  color: #4b2f2f;
+}
 /*# sourceMappingURL=landingPage.css.map */

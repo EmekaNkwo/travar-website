@@ -16,7 +16,7 @@ function LandingPage() {
         slidesPerView={1}
         modules={[Navigation, EffectFade]}
         navigation
-        effect
+        effect={"fade"}
         speed={800}
         loop
         className="myswiper"

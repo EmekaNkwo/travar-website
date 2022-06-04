@@ -15,4 +15,22 @@
       }
     }
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+
+    color: #fff;
+    border-radius: 50%;
+    padding: 0 2rem;
+
+
+
+    &:hover {
+      color: aqua;
+    }
+
+    &:active {
+      color: rgb(75, 47, 47);
+    }
+  }
 }
