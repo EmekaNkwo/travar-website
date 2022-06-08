@@ -1,13 +1,11 @@
 .navbar {
-  height: 70px;
-  padding: 0 2rem;
   background-color: #003580;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .navContainer {
@@ -22,6 +20,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 1rem;
 }
 
 .navbar .navContainer .logo {
@@ -48,14 +47,13 @@
 }
 
 .navbar .navContainer .navButton {
-  margin-left: 1.1rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
   border: none;
   padding: 1rem 2rem;
   cursor: pointer;
   border-radius: 0.8rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #003580;
 }
 
@@ -64,12 +62,5 @@
   color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-@media only screen and (min-width: 1200px) {
-  .navContainer {
-    padding: 0 0;
-    max-width: 1200px;
-  }
 }
 /*# sourceMappingURL=Navbar.css.map */

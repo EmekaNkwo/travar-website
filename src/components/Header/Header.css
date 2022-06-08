@@ -15,7 +15,6 @@
 
 .header .headerContainer {
   width: 100%;
-  max-width: 1024px;
   margin: 1.2rem 0 6rem 0;
 }
 
@@ -56,7 +55,7 @@
   padding: 1rem 2rem;
   cursor: pointer;
   border-radius: 0.8rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .header .headerContainer .headerSearch {

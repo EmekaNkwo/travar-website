@@ -1,34 +1,86 @@
 .pageContainer {
   width: 100%;
-  height: 100%;
-}
-
-.pageContainer .myswiper {
-  width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1a1a1a;
+  position: relative;
 }
 
-.pageContainer .myswiper .swiper-slide img {
+.pageContainer .pageContent {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.pageContainer .swiper-button-next,
-.pageContainer .swiper-button-prev {
+.pageContainer .pageContent .content_Title {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+.pageContainer .pageContent p {
+  margin: 1.5rem 0;
+  max-width: 500px;
+  color: white;
+  line-height: 1.5;
+}
+
+.pageContainer .pageContent .pageButton {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.pageContainer .pageContent .pageButton:hover {
+  background-color: #0071c2;
   color: #fff;
-  border-radius: 50%;
-  padding: 0 2rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.pageContainer .swiper-button-next:hover,
-.pageContainer .swiper-button-prev:hover {
-  color: aqua;
+@media screen and (max-width: 1080px) {
+  .pageContainer .pageContent {
+    text-align: center;
+  }
+  .pageContainer .pageContent p {
+    max-width: 600px;
+    line-height: 2;
+  }
 }
 
-.pageContainer .swiper-button-next:active,
-.pageContainer .swiper-button-prev:active {
-  color: #4b2f2f;
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .pageContainer .pageContent .content_Title {
+    font-size: 2.2rem;
+  }
+  .pageContainer .pageContent p {
+    max-width: 400px;
+  }
 }
 /*# sourceMappingURL=landingPage.css.map */

@@ -19,14 +19,10 @@ function Navbar() {
           </li>
           <li>
             <a href="#" className="navListLink">
-              Destinations
+              Trip Planner
             </a>
           </li>
-          <li>
-            <a href="#" className="navListLink">
-              Blog
-            </a>
-          </li>
+
           <li>
             <a href="#" className="navListLink">
               Contact
@@ -35,7 +31,6 @@ function Navbar() {
         </ul>
 
         <div className="navItems">
-          <button className="navButton">Register</button>
           <button className="navButton">Login</button>
         </div>
       </div>
