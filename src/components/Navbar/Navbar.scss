@@ -1,47 +1,67 @@
 @import "../../constants/variables";
 
-.navbar {
+.navContainer {
+  position: fixed;
   background-color: $primary-color;
+  width: 100%;
+  color: $white-color;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 2rem;
+  z-index: 10;
 
-  .navContainer {
-    // max-width: 1400px;
-    width: 100%;
-    color: $white-color;
+  .logo {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .navList {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+    justify-content: center;
+    gap: 4.5rem;
+    list-style: none;
 
-    .logo {
-      font-size: 1.3rem;
-      font-weight: 500;
+    .navListLink {
+      color: white;
+      font-size: 1.1rem;
+      text-decoration: none;
+      font-weight: $baseFontBold;
     }
+  }
+}
 
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .navContainer {
     .navList {
-      display: flex;
-      align-items: center;
-      gap: 4.5rem;
-      list-style: none;
+      position: absolute;
+      flex-direction: column;
+      height: 100vh;
+      width: 60%;
+      top: 0%;
+      right: -100%;
+      transition: 0.5s;
+      z-index: -1;
+      text-align: center;
+      background-color: rgb(42, 42, 42);
+    }
 
-      .navListLink {
+    .hamburger {
+      display: block;
+      a {
         color: white;
-        font-size: 1.1rem;
-        text-decoration: none;
-        font-weight: $baseFontBold;
+        font-size: 1.5rem;
       }
     }
 
-    .navButton {
-      @include ButtonStyle;
-      color: $primary-color;
-
-      &:hover {
-        background-color: $secondary-color;
-        color: $white-color;
-        transition: 0.3s;
-      }
+    .navList.active {
+      right: 0;
     }
   }
 }

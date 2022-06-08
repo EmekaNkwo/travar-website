@@ -1,12 +1,18 @@
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 
 function Navbar() {
-  return (
-    <div className="navbar">
-      <div className="navContainer">
-        <span className="logo">Travar</span>
+  const [toggle, setToggle] = useState(false);
 
-        <ul className="navList">
+  const handleToggle = () => setToggle(!toggle);
+
+  return (
+    <div>
+      <nav className="navContainer">
+        <div className="logo">Travar</div>
+
+        <ul className={toggle ? "navList" : "navList active"}>
           <li>
             <a href="#" className="navListLink">
               About
@@ -30,10 +36,11 @@ function Navbar() {
           </li>
         </ul>
 
-        <div className="navItems">
-          <button className="navButton">Login</button>
+        <div className="hamburger" onClick={handleToggle}>
+          {/* eslint-disable-next-line*/}
+          <a href="#"> {toggle ? <FaBars /> : <FaTimes />}</a>
         </div>
-      </div>
+      </nav>
     </div>
   );
 }

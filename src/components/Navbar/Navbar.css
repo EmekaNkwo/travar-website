@@ -1,14 +1,6 @@
-.navbar {
+.navContainer {
+  position: fixed;
   background-color: #003580;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar .navContainer {
   width: 100%;
   color: #fff;
   display: -webkit-box;
@@ -20,47 +12,67 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem;
+  height: 100px;
+  padding: 2rem;
+  z-index: 10;
 }
 
-.navbar .navContainer .logo {
+.navContainer .logo {
   font-size: 1.3rem;
   font-weight: 500;
 }
 
-.navbar .navContainer .navList {
+.navContainer .navList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 4.5rem;
   list-style: none;
 }
 
-.navbar .navContainer .navList .navListLink {
+.navContainer .navList .navListLink {
   color: white;
   font-size: 1.1rem;
   text-decoration: none;
   font-weight: 600;
 }
 
-.navbar .navContainer .navButton {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 600;
-  border: none;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  border-radius: 0.8rem;
-  font-size: 1.2rem;
-  color: #003580;
+.hamburger {
+  display: none;
 }
 
-.navbar .navContainer .navButton:hover {
-  background-color: #0071c2;
-  color: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+@media screen and (max-width: 1280px) {
+  .navContainer .navList {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    width: 60%;
+    top: 0%;
+    right: -100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: -1;
+    text-align: center;
+    background-color: #2a2a2a;
+  }
+  .navContainer .hamburger {
+    display: block;
+  }
+  .navContainer .hamburger a {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .navContainer .navList.active {
+    right: 0;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */
