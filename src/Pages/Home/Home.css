@@ -6,7 +6,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2.2rem;
+  gap: 3rem;
 }
 
 .homeContainer .homeTitle {

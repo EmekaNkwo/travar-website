@@ -1,0 +1,126 @@
+@import "../../constants/variables";
+
+.searchHeader {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.headerSearch {
+  background-color: rgb(4, 4, 47);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-radius: 0.2rem;
+  width: 70%;
+  z-index: 2;
+  position: relative;
+  padding: 3rem;
+
+  .headerSearchItem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    width: 300px;
+    background-color: white;
+    gap: 10px;
+
+    .headerSearchTitle {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      span {
+        color: rgb(4, 4, 47);
+      }
+    }
+
+    .headerSearchInput {
+      border: none;
+      outline: none;
+      font-size: 1.1rem;
+      font-family: $baseFont;
+
+      &::placeholder {
+        color: rgb(4, 4, 47);
+      }
+    }
+
+    .headerIcon {
+      color: rgb(252, 204, 29);
+    }
+
+    .headerSearchText {
+      font-size: 1.1rem;
+      color: rgb(4, 4, 47);
+      border-radius: 0.8rem;
+
+      cursor: pointer;
+      font-family: $baseFont;
+    }
+
+    .options {
+      position: absolute;
+      top: 69%;
+      left: 58%;
+      width: 300px;
+      background-color: $white-color;
+      color: rgb(4, 4, 47);
+      border-radius: 5px;
+      filter: drop-shadow(1px 1px 2px #d5d5d5d2);
+    }
+
+    .optionItem {
+      width: 265px;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+    }
+
+    .optionCounter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      color: rgb(4, 4, 47);
+    }
+
+    .optionCounterButton {
+      width: 30px;
+      height: 30px;
+      border: 1px solid $secondary-color;
+      color: rgb(4, 4, 47);
+      cursor: pointer;
+      background-color: white;
+    }
+
+    .optionCounterButton:disabled {
+      cursor: not-allowed;
+    }
+
+    .date {
+      width: 300px;
+      position: absolute;
+      top: 70%;
+      left: 31%;
+      border-radius: 5px;
+      filter: drop-shadow(1px 1px 2px #d5d5d5d2);
+    }
+  }
+
+  .headerButton {
+    button {
+      padding: 1.9rem;
+      background-color: rgb(252, 204, 29);
+      border-radius: 0.2rem;
+      font-size: 1.2rem;
+      font-family: $baseFont;
+      font-weight: $baseFontBold;
+      color: white;
+    }
+  }
+}
