@@ -1,5 +1,6 @@
 import "./Featured.css";
-import { GiAfrica } from "react-icons/gi";
+import { GiAfrica, GiPayMoney } from "react-icons/gi";
+import { RiCustomerService2Fill } from "react-icons/ri";
 
 function Featured() {
   return (
@@ -7,41 +8,29 @@ function Featured() {
       <div className="features">
         <div className="featureContent">
           <GiAfrica className="featureIcon" />
-          .featureText
+          <div className="featureText">
+            <h2>Africa's No 1</h2>
+            <p>Travar is the Leading travel agency in Africa.</p>
+          </div>
         </div>
-      </div>
-
-      <div className="featuredItem">
-        <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/957801.webp?k=a969e39bcd40cdcc21786ba92826063e3cb09bf307bcfeac2aa392b838e9b7a5&o="
-          alt=""
-          className="featuredImg"
-        />
-        <div className="featuredTitles">
-          <h1>Dublin</h1>
-          <h2>123 properties</h2>
+        <div className="featureContent">
+          <GiPayMoney className="featureIcon" />
+          <div className="featureText">
+            <h2>Installment Payment</h2>
+            <p>
+              Lock down great travel deals and pay in convenient installments
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="featuredItem">
-        <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/690334.webp?k=b99df435f06a15a1568ddd5f55d239507c0156985577681ab91274f917af6dbb&o="
-          alt=""
-          className="featuredImg"
-        />
-        <div className="featuredTitles">
-          <h1>Reno</h1>
-          <h2>533 properties</h2>
-        </div>
-      </div>
-      <div className="featuredItem">
-        <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
-          alt=""
-          className="featuredImg"
-        />
-        <div className="featuredTitles">
-          <h1>Austin</h1>
-          <h2>532 properties</h2>
+        <div className="featureContent">
+          <RiCustomerService2Fill className="featureIcon" />
+          <div className="featureText">
+            <h2>We are here for you</h2>
+            <p>
+              Reach us 24/7 <br />
+              (Monday - Sunday)
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,9 +1,6 @@
-
 import "./landingPage.css";
 
-
 function LandingPage() {
- 
   return (
     <div className="pageContainer">
       <div className="pageContent">
@@ -20,7 +17,6 @@ function LandingPage() {
 
         <button className="pageButton">Explore</button>
       </div>
-  
     </div>
   );
 }

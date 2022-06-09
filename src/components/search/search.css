@@ -1,9 +1,3 @@
-.searchHeader {
-  text-align: center;
-  font-size: 2.4rem;
-  margin-bottom: 2rem;
-}
-
 .headerSearch {
   background-color: #04042f;
   display: -webkit-box;
@@ -12,15 +6,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
   border-radius: 0.2rem;
-  width: 70%;
   z-index: 2;
-  position: relative;
   padding: 3rem;
+  gap: 1rem;
 }
 
 .headerSearch .headerSearchItem {
@@ -152,12 +147,13 @@
 }
 
 .headerSearch .headerButton button {
-  padding: 1.9rem;
+  padding: 1.95rem;
   background-color: #fccc1d;
   border-radius: 0.2rem;
   font-size: 1.2rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   color: white;
+  border: none;
 }
 /*# sourceMappingURL=search.css.map */

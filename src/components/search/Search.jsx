@@ -48,7 +48,6 @@ function Search() {
 
   return (
     <div>
-      <h1 className="searchHeader">Search and Book Destination</h1>
       <div className="headerSearch">
         <div className="headerSearchItem">
           <div className="headerSearchTitle">

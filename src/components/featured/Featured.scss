@@ -1,32 +1,41 @@
 .featured {
+  margin: 1rem auto;
   width: 100%;
   max-width: 1024px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  z-index: 1;
 
-  .featuredItem {
-    position: relative;
-    color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 250px;
-    flex: 1;
 
-    .featuredImg {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  .features {
+    display: flex;
+    justify-content: space-between;
 
-    .featuredTitles {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.7rem;
-      padding: 1rem;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.726);
+
+    .featureContent {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+
+      .featureIcon {
+        font-size: 2.4rem;
+      }
+
+      .featureText {
+        p {
+          color: rgb(4, 4, 47);
+          width: 200px;
+        }
+      }
     }
   }
+
+  // .featuredItem {
+  //   position: relative;
+  //   color: white;
+  //   border-radius: 10px;
+  //   overflow: hidden;
+  //   height: 250px;
+  //   flex: 1;
+
+
+
+  // }
 }
