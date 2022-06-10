@@ -3,15 +3,14 @@
   width: 100%;
   max-width: 1024px;
 
-
   .features {
     display: flex;
     justify-content: space-between;
 
-
     .featureContent {
       display: flex;
       align-items: center;
+      align-self: flex-start;
       gap: 0.8rem;
 
       .featureIcon {
@@ -34,8 +33,6 @@
   //   overflow: hidden;
   //   height: 250px;
   //   flex: 1;
-
-
 
   // }
 }
