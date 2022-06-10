@@ -1,7 +1,10 @@
 .featured {
   margin: 1rem auto;
   width: 100%;
-  max-width: 1024px;
+  max-width: 1000px;
+
+
+
 
   .features {
     display: flex;
@@ -10,29 +13,20 @@
     .featureContent {
       display: flex;
       align-items: center;
-      align-self: flex-start;
+
       gap: 0.8rem;
 
       .featureIcon {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
       }
 
       .featureText {
         p {
-          color: rgb(4, 4, 47);
+          color: rgb(238, 63, 28);
           width: 200px;
         }
       }
     }
   }
 
-  // .featuredItem {
-  //   position: relative;
-  //   color: white;
-  //   border-radius: 10px;
-  //   overflow: hidden;
-  //   height: 250px;
-  //   flex: 1;
-
-  // }
 }
