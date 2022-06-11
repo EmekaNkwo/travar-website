@@ -14,6 +14,7 @@
     justify-content: center;
     flex-direction: column;
     padding-left: 2rem;
+
     .content_Title {
       font-size: 3.2rem;
       color: white;
@@ -28,7 +29,7 @@
     }
 
     .pageButton {
-      @include ButtonStyle;
+      @include PrimaryButtonStyle;
 
       &:hover {
         background-color: $secondary-color;
@@ -56,6 +57,7 @@
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .pageContainer {
     .pageContent {

@@ -2,6 +2,10 @@ import "./PropertyList.css";
 import { useRef } from "react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { BsArrowRightShort } from "react-icons/bs";
+import { GiCommercialAirplane } from "react-icons/gi";
+import { FaDollarSign } from "react-icons/fa";
+import img1 from "../../assets/images/bg1.jpg";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,7 +19,7 @@ const PropertyList = () => {
     <div className="swiperContainer">
       <Swiper
         modules={[Navigation, Pagination]}
-        speed={800}
+        speed={400}
         slidesPerView={3}
         spaceBetween={10}
         navigation={{
@@ -33,29 +37,83 @@ const PropertyList = () => {
       >
         <SwiperSlide className="swiperSlide">
           <div className="swiperItem">
-            <img
-              src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-              alt="deal"
-              className="slideImg"
-            />
-            <span className="dealLocation">Tarkwa </span>
+            <img src={img1} alt="deal" className="slideImg" />
+            <div className="swiperItemContent">
+              <div className="itemLeft">
+                <div className="itemLeftIcon">
+                  <GiCommercialAirplane />
+                </div>
+
+                <div className="itemLeftText">
+                  <h3 className="dealLocation">
+                    Lagos <BsArrowRightShort /> Dubai
+                  </h3>
+                  <span className="date">Jun 20, 2022 - Jun 26, 2022</span>
+                  <p className="price">
+                    <FaDollarSign />
+                    500
+                  </p>
+                </div>
+              </div>
+              <div className="itemRight">
+                <button className="swiperBtn">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiperSlide">
+          <div className="swiperItem">
+            <img src={img1} alt="deal" className="slideImg" />
+            <div className="swiperItemContent">
+              <div className="itemLeft">
+                <div className="itemLeftIcon">
+                  <GiCommercialAirplane />
+                </div>
+
+                <div className="itemLeftText">
+                  <h3 className="dealLocation">
+                    Lagos <BsArrowRightShort /> Dubai
+                  </h3>
+                  <span className="date">Jun 20, 2022 - Jun 26, 2022</span>
+                  <p className="price">
+                    <FaDollarSign />
+                    500
+                  </p>
+                </div>
+              </div>
+              <div className="itemRight">
+                <button className="swiperBtn">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiperSlide">
+          <div className="swiperItem">
+            <img src={img1} alt="deal" className="slideImg" />
+            <div className="swiperItemContent">
+              <div className="itemLeft">
+                <div className="itemLeftIcon">
+                  <GiCommercialAirplane />
+                </div>
+
+                <div className="itemLeftText">
+                  <h3 className="dealLocation">
+                    Lagos <BsArrowRightShort /> Dubai
+                  </h3>
+                  <span className="date">Jun 20, 2022 - Jun 26, 2022</span>
+                  <p className="price">
+                    <FaDollarSign />
+                    500
+                  </p>
+                </div>
+              </div>
+              <div className="itemRight">
+                <button className="swiperBtn">Book Now</button>
+              </div>
+            </div>
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="swiperSlide">
-          <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg"
-            alt=""
-            className="slideImg"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-villas_300/dd0d7f8202676306a661aa4f0cf1ffab31286211.jpg"
-            alt=""
-            className="slideImg"
-          />
-        </SwiperSlide>
         <div className="swiperNavPrev" ref={swiperPrevRef}></div>
         <div className="swiperNavNext" ref={swiperNextRef}></div>
       </Swiper>

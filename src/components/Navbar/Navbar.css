@@ -1,28 +1,42 @@
-.navContainer {
-  position: fixed;
-  background-color: #003580;
-  width: 100%;
-  color: #fff;
+.navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #003580;
   padding: 2rem;
+  width: 100%;
+  position: fixed;
   z-index: 10;
 }
 
-.navContainer .logo {
-  font-size: 1.3rem;
+.navBar .navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.navBar .navContainer .logo {
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
-.navContainer .navList {
+.navBar .navContainer .navList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,19 +50,19 @@
   list-style: none;
 }
 
-.navContainer .navList .navListLink {
+.navBar .navContainer .navList .navListLink {
   color: white;
   font-size: 1.1rem;
   text-decoration: none;
   font-weight: 700;
 }
 
-.hamburger {
+.navBar .navContainer .hamburger {
   display: none;
 }
 
 @media screen and (max-width: 1280px) {
-  .navContainer .navList {
+  .navBar .navContainer .navList {
     position: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -64,14 +78,14 @@
     text-align: center;
     background-color: #2a2a2a;
   }
-  .navContainer .hamburger {
+  .navBar .navContainer .hamburger {
     display: block;
   }
-  .navContainer .hamburger a {
+  .navBar .navContainer .hamburger a {
     color: white;
     font-size: 1.5rem;
   }
-  .navContainer .navList.active {
+  .navBar .navContainer .navList.active {
     right: 0;
   }
 }

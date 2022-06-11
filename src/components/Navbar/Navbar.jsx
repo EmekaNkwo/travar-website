@@ -8,8 +8,8 @@ function Navbar() {
   const handleToggle = () => setToggle(!toggle);
 
   return (
-    <div>
-      <nav className="navContainer">
+    <div className="navBar">
+      <div className="navContainer">
         <div className="logo">Travar</div>
 
         <ul className={toggle ? "navList" : "navList active"}>
@@ -40,7 +40,7 @@ function Navbar() {
           {/* eslint-disable-next-line*/}
           <a href="#"> {toggle ? <FaBars /> : <FaTimes />}</a>
         </div>
-      </nav>
+      </div>
     </div>
   );
 }

@@ -8,9 +8,6 @@
 .swiperContainer .mySwiper {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .swiperContainer .mySwiper .swiperNavPrev {
@@ -18,14 +15,14 @@
   position: absolute;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  top: 50%;
+  top: 40%;
   left: -1%;
   background-color: #fff;
   padding: 2rem;
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  z-index: 1;
+  z-index: 2;
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: contain;
@@ -37,14 +34,14 @@
   position: absolute;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  top: 50%;
+  top: 40%;
   right: -1%;
   background-color: #fff;
   padding: 2rem;
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  z-index: 1;
+  z-index: 2;
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: contain;
@@ -66,8 +63,79 @@
 .swiperContainer .mySwiper .swiperSlide .slideImg {
   width: 100%;
   height: 250px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.2rem;
+}
+
+.swiperContainer .mySwiper .swiperSlide .swiperItem .swiperItemContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.swiperContainer .mySwiper .swiperSlide .swiperItem .swiperItemContent .itemLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiperContainer .mySwiper .swiperSlide .swiperItem .swiperItemContent .itemLeft .itemLeftIcon {
+  font-size: 2rem;
+  margin-right: 0.8rem;
+  padding: 0.8rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.6rem;
+}
+
+.swiperContainer .mySwiper .swiperSlide .swiperItem .swiperItemContent .itemLeft .itemLeftText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.swiperContainer .mySwiper .swiperSlide .swiperItem .swiperItemContent .itemLeft .itemLeftText .dealLocation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiperContainer .mySwiper .swiperSlide .swiperItem .swiperItemContent .itemLeft .itemLeftText .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiperContainer .mySwiper .swiperSlide .swiperItem .swiperItemContent .itemRight button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=PropertyList.css.map */
