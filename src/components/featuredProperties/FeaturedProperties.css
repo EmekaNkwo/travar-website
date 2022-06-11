@@ -4,6 +4,10 @@
   margin: 1rem auto;
 }
 
+.featureList h1 {
+  margin-bottom: 2rem;
+}
+
 .featureList .fp {
   display: -webkit-box;
   display: -ms-flexbox;

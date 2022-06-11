@@ -3,6 +3,10 @@
   max-width: 1024px;
   margin: 1rem auto;
 
+  h1 {
+    margin-bottom: 2rem;
+  }
+
   .fp {
     display: flex;
 
@@ -34,7 +38,7 @@
         font-weight: 500;
       }
 
-      .fpRating > button {
+      .fpRating>button {
         background-color: #003580;
         color: white;
         border: none;
@@ -43,7 +47,7 @@
         font-weight: bold;
       }
 
-      .fpRating > span {
+      .fpRating>span {
         font-size: 14px;
       }
     }

@@ -5,6 +5,10 @@
   position: relative;
 }
 
+.swiperContainer h1 {
+  margin-bottom: 2rem;
+}
+
 .swiperContainer .mySwiper {
   width: 100%;
   height: 100%;
