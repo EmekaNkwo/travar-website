@@ -1,67 +1,72 @@
-.featureList {
+.propertyContainer {
   width: 100%;
   max-width: 1024px;
   margin: 1rem auto;
 }
 
-.featureList h1 {
+.propertyContainer h1 {
   margin-bottom: 2rem;
 }
 
-.featureList .fp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-}
-
-.featureList .fp .fpItem {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  gap: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.featureList .fp .fpItem .fpImg {
+.propertyContainer .propertySwiper {
   width: 100%;
-  height: 250px;
+  height: 100%;
+}
+
+.propertyContainer .swiperNavPrev {
+  background-image: url(../../assets/images/angle-left.svg);
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 40%;
+  left: -1%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.propertyContainer .swiperNavNext {
+  background-image: url(../../assets/images/angle-right.svg);
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 40%;
+  right: -1%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.propertyContainer .swiper-button-next,
+.propertyContainer .swiper-button-prev {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.propertyContainer .swiper-button-next::after,
+.propertyContainer .swiper-button-prev::after {
+  display: none;
+}
+
+.propertyContainer .swiperItem img {
+  width: 100%;
+  height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.featureList .fp .fpItem .fpName {
-  color: #333;
-  font-weight: bold;
-}
-
-.featureList .fp .fpItem .fpCity {
-  font-weight: 300;
-}
-
-.featureList .fp .fpItem .fpPrice {
-  font-weight: 500;
-}
-
-.featureList .fp .fpItem .fpRating > button {
-  background-color: #003580;
-  color: white;
-  border: none;
-  padding: 3px;
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-.featureList .fp .fpItem .fpRating > span {
-  font-size: 14px;
 }
 /*# sourceMappingURL=FeaturedProperties.css.map */

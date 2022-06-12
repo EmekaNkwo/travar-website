@@ -17,7 +17,7 @@ const PropertyList = () => {
 
   return (
     <div className="swiperContainer">
-      <h1>Homes guest Love</h1>
+      <h1>Today's Flight Deals</h1>
       <Swiper
         modules={[Navigation, Pagination]}
         speed={400}
