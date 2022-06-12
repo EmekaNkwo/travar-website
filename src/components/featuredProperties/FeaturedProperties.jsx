@@ -1,5 +1,6 @@
 import "./FeaturedProperties.css";
 import { useRef } from "react";
+import { MdOutlineLocationOn } from "react-icons/md";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -74,10 +75,13 @@ const FeaturedProperties = () => {
                   <p>{property.price}</p>
                 </div>
                 <div className="swiperSlide__info__location">
-                  <p>{property.location}</p>
+                  <p>
+                    <MdOutlineLocationOn className="location_icon" />
+                    {property.location}
+                  </p>
                 </div>
                 <div className="swiperSlide__info__rating">
-                  <p>{property.rating}</p>
+                  <button>{property.rating}</button>
                 </div>
               </div>
             </div>

@@ -6,6 +6,8 @@ import { BsArrowRightShort } from "react-icons/bs";
 import { GiCommercialAirplane } from "react-icons/gi";
 import { FaDollarSign } from "react-icons/fa";
 import img1 from "../../assets/images/bg1.jpg";
+import img2 from "../../assets/images/bg2.jpg";
+import img3 from "../../assets/images/bg3.jpg";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -50,10 +52,7 @@ const PropertyList = () => {
                     Lagos <BsArrowRightShort /> Dubai
                   </h3>
                   <span className="date">Jun 20, 2022 - Jun 26, 2022</span>
-                  <p className="price">
-                    <FaDollarSign />
-                    500
-                  </p>
+                  <p className="price">$500</p>
                 </div>
               </div>
               <div className="itemRight">
@@ -64,7 +63,7 @@ const PropertyList = () => {
         </SwiperSlide>
         <SwiperSlide className="swiperSlide">
           <div className="swiperItem">
-            <img src={img1} alt="deal" className="slideImg" />
+            <img src={img2} alt="deal" className="slideImg" />
             <div className="swiperItemContent">
               <div className="itemLeft">
                 <div className="itemLeftIcon">
@@ -76,10 +75,7 @@ const PropertyList = () => {
                     Lagos <BsArrowRightShort /> Dubai
                   </h3>
                   <span className="date">Jun 20, 2022 - Jun 26, 2022</span>
-                  <p className="price">
-                    <FaDollarSign />
-                    500
-                  </p>
+                  <p className="price">$500</p>
                 </div>
               </div>
               <div className="itemRight">
@@ -90,7 +86,7 @@ const PropertyList = () => {
         </SwiperSlide>
         <SwiperSlide className="swiperSlide">
           <div className="swiperItem">
-            <img src={img1} alt="deal" className="slideImg" />
+            <img src={img3} alt="deal" className="slideImg" />
             <div className="swiperItemContent">
               <div className="itemLeft">
                 <div className="itemLeftIcon">
@@ -102,10 +98,7 @@ const PropertyList = () => {
                     Lagos <BsArrowRightShort /> Dubai
                   </h3>
                   <span className="date">Jun 20, 2022 - Jun 26, 2022</span>
-                  <p className="price">
-                    <FaDollarSign />
-                    500
-                  </p>
+                  <p className="price">$500</p>
                 </div>
               </div>
               <div className="itemRight">

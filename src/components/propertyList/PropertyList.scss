@@ -90,7 +90,7 @@
               font-size: 2rem;
               margin-right: 0.8rem;
               padding: 0.8rem;
-              background-color: black;
+              background-color: rgb(51, 51, 51);
               color: white;
               border-radius: 0.6rem;
 
@@ -99,7 +99,7 @@
             .itemLeftText {
               display: flex;
               flex-direction: column;
-              gap: 0.5rem;
+              gap: 0.2rem;
               text-align: left;
 
 
@@ -107,8 +107,13 @@
                 @include FlexMe();
               }
 
+              .date {
+                font-weight: bold
+              }
+
               .price {
-                @include FlexMe();
+
+                font-weight: bold
               }
             }
           }
@@ -116,6 +121,7 @@
           .itemRight {
             button {
               @include SecButtonStyle();
+              background-color: rgb(232, 180, 11)
             }
           }
 
