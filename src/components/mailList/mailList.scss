@@ -37,6 +37,11 @@
       @include SecButtonStyle();
       background-color: rgb(232, 180, 11);
       color: rgb(26, 26, 26);
+
+      &:hover {
+        background-color: rgb(222, 170, 0);
+        transition: 0.3s;
+      }
     }
   }
 }

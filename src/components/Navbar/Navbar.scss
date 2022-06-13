@@ -1,54 +1,29 @@
-@import "../../constants/variables";
-
-.navBar {
-
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #003580;
-  padding: 2rem;
+.navContainer {
   width: 100%;
   position: fixed;
-  z-index: 10;
+  background-color: #003580;
+  z-index: 2;
 
-  .navContainer {
-
-
-
-    display: flex;
-    align-items: center;
-    max-width: 1024px;
+  .navBar {
+    margin: 0 auto;
     width: 100%;
+    max-width: 1024px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
-
-    color: $white-color;
-
-
-
+    justify-content: space-between;
+    padding: 1.6rem;
 
     .logo {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: 500;
     }
 
     .navList {
-
       display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 4.5rem;
       list-style: none;
+      gap: 3rem;
 
-      .navListLink {
-        color: white;
-        font-size: 1.1rem;
-        text-decoration: none;
-        font-weight: $baseFontBold;
-      }
+
     }
 
     .hamburger {
@@ -57,33 +32,7 @@
   }
 
 
-  @media screen and (max-width: 1280px) {
-    .navContainer {
-      .navList {
-        position: absolute;
-        flex-direction: column;
-        height: 100vh;
-        width: 60%;
-        top: 0%;
-        right: -100%;
-        transition: 0.5s;
-        z-index: -1;
-        text-align: center;
-        background-color: #032b64;
-      }
 
-      .hamburger {
-        display: block;
 
-        .hamIcon {
-          color: white;
-          font-size: 1.8rem;
-        }
-      }
 
-      .navList.active {
-        right: 0;
-      }
-    }
-  }
 }

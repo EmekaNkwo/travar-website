@@ -1,5 +1,4 @@
 .pageContainer {
-  width: 100%;
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 33, 33, 0.52)), to(rgba(32, 32, 32, 0.816))), url("../../assets/images/bg2.jpg");
   background-image: linear-gradient(to bottom, rgba(33, 33, 33, 0.52), rgba(32, 32, 32, 0.816)), url("../../assets/images/bg2.jpg");
@@ -9,13 +8,11 @@
 
 .pageContainer .pageContent {
   position: relative;
+  width: 100%;
   top: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -47,13 +44,15 @@
   cursor: pointer;
   border-radius: 0.8rem;
   font-size: 1.2rem;
+  background-color: #e8b40b;
+  color: #1a1a1a;
 }
 
 .pageContainer .pageContent .pageButton:hover {
   background-color: #0071c2;
   color: #fff;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 1280px) {
@@ -77,7 +76,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .pageContainer .pageContent .content_Title {
     font-size: 2.2rem;
   }

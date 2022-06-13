@@ -1,3 +1,5 @@
+@import "../../constants/variables";
+
 .footer {
   width: 100%;
   max-width: 1024px;
@@ -18,6 +20,7 @@
       .fListItem {
         margin-bottom: 10px;
         color: #003580;
+        font-weight: $baseFontBold;
         cursor: pointer;
       }
     }

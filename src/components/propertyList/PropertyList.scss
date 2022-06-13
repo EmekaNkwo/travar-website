@@ -93,18 +93,6 @@
           .itemLeft {
             @include FlexMe();
 
-
-
-            .itemLeftIcon {
-              font-size: 2rem;
-              margin-right: 0.8rem;
-              padding: 0.8rem;
-              background-color: rgb(51, 51, 51);
-              color: white;
-              border-radius: 0.6rem;
-
-            }
-
             .itemLeftText {
               display: flex;
               flex-direction: column;

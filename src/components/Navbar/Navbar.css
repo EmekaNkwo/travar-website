@@ -1,92 +1,40 @@
-.navBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #003580;
-  padding: 2rem;
+.navContainer {
   width: 100%;
   position: fixed;
-  z-index: 10;
+  background-color: #003580;
+  z-index: 2;
 }
 
-.navBar .navContainer {
+.navContainer .navBar {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1024px;
-  width: 100%;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  align-items: center;
-  color: #fff;
+  padding: 1.6rem;
 }
 
-.navBar .navContainer .logo {
-  font-size: 1.8rem;
+.navContainer .navBar .logo {
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
-.navBar .navContainer .navList {
+.navContainer .navBar .navList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 4.5rem;
   list-style: none;
+  gap: 3rem;
 }
 
-.navBar .navContainer .navList .navListLink {
-  color: white;
-  font-size: 1.1rem;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.navBar .navContainer .hamburger {
+.navContainer .navBar .hamburger {
   display: none;
-}
-
-@media screen and (max-width: 1280px) {
-  .navBar .navContainer .navList {
-    position: absolute;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 100vh;
-    width: 60%;
-    top: 0%;
-    right: -100%;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    z-index: -1;
-    text-align: center;
-    background-color: #032b64;
-  }
-  .navBar .navContainer .hamburger {
-    display: block;
-  }
-  .navBar .navContainer .hamburger .hamIcon {
-    color: white;
-    font-size: 1.8rem;
-  }
-  .navBar .navContainer .navList.active {
-    right: 0;
-  }
 }
 /*# sourceMappingURL=Navbar.css.map */

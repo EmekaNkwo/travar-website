@@ -51,4 +51,10 @@
   background-color: #e8b40b;
   color: #1a1a1a;
 }
+
+.mail .mailInputContainer button:hover {
+  background-color: #deaa00;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 /*# sourceMappingURL=mailList.css.map */
