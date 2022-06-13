@@ -43,10 +43,6 @@ const PropertyList = () => {
             <img src={img1} alt="deal" className="slideImg" />
             <div className="swiperItemContent">
               <div className="itemLeft">
-                <div className="itemLeftIcon">
-                  <GiCommercialAirplane />
-                </div>
-
                 <div className="itemLeftText">
                   <h3 className="dealLocation">
                     Lagos <BsArrowRightShort /> Dubai
@@ -66,10 +62,6 @@ const PropertyList = () => {
             <img src={img2} alt="deal" className="slideImg" />
             <div className="swiperItemContent">
               <div className="itemLeft">
-                <div className="itemLeftIcon">
-                  <GiCommercialAirplane />
-                </div>
-
                 <div className="itemLeftText">
                   <h3 className="dealLocation">
                     Lagos <BsArrowRightShort /> Dubai
@@ -89,10 +81,6 @@ const PropertyList = () => {
             <img src={img3} alt="deal" className="slideImg" />
             <div className="swiperItemContent">
               <div className="itemLeft">
-                <div className="itemLeftIcon">
-                  <GiCommercialAirplane />
-                </div>
-
                 <div className="itemLeftText">
                   <h3 className="dealLocation">
                     Lagos <BsArrowRightShort /> Dubai

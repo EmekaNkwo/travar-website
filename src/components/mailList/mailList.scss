@@ -11,19 +11,32 @@
   gap: 20px;
   padding: 50px;
 
-  .mailInputContainer > input {
-    font-family: $baseFont;
-    width: 300px;
-    height: 51px;
-    padding: 0.8rem;
-    border: none;
-    margin-right: 10px;
-    border-radius: 0.8rem;
+  h1 {
+    font-size: 2.2rem;
   }
 
-  .mailInputContainer > button {
-    @include ButtonStyle();
-    background-color: #0071c2;
-    color: white;
+  .mailInputContainer {
+    display: flex;
+    align-items: center;
+
+    input {
+      font-family: $baseFont;
+      width: 300px;
+
+      padding: 1rem 2rem;
+      border: none;
+      margin-right: 10px;
+      border-radius: 0.8rem;
+      font-size: 1rem;
+    }
+
+  }
+
+  .mailInputContainer {
+    button {
+      @include SecButtonStyle();
+      background-color: rgb(232, 180, 11);
+      color: rgb(26, 26, 26);
+    }
   }
 }

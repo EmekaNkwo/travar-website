@@ -8,6 +8,7 @@
 
   h1 {
     margin-bottom: 2rem;
+    color: #003580;
   }
 
   .mySwiper {
@@ -74,16 +75,24 @@
       }
 
       .swiperItem {
+        display: relative;
 
 
         .swiperItemContent {
+          width: 100%;
+
+
+
+          color: rgb(36, 36, 36);
+
 
           @include FlexMe();
           justify-content: space-between;
-          margin-top: 1rem;
+          margin-top: 0.2rem;
 
           .itemLeft {
             @include FlexMe();
+
 
 
             .itemLeftIcon {
@@ -121,7 +130,15 @@
           .itemRight {
             button {
               @include SecButtonStyle();
-              background-color: rgb(232, 180, 11)
+              color: rgb(26, 26, 26);
+              background-color: rgb(232, 180, 11);
+              cursor: pointer;
+
+              &:hover {
+                color: #fff;
+                background-color: #003580;
+                transition: 0.3s;
+              }
             }
           }
 

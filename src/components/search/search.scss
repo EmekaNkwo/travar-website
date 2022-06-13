@@ -6,7 +6,7 @@
 
 
 .headerSearch {
-  background-color: rgb(4, 4, 47);
+  background-color: #003580;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,9 @@
       gap: 1rem;
 
       span {
-        color: rgb(4, 4, 47);
+        color: #003580;
+        text-transform: uppercase;
+        font-weight: $baseFontBold ;
       }
     }
 
@@ -52,7 +54,7 @@
     }
 
     .headerIcon {
-      color: rgb(252, 204, 29);
+      color: #003580;
     }
 
     .headerSearchText {
@@ -116,12 +118,12 @@
   .headerButton {
     button {
       padding: 1.95rem;
-      background-color: rgb(252, 204, 29);
+      background-color: rgb(232, 180, 11);
       border-radius: 0.2rem;
       font-size: 1.2rem;
       font-family: $baseFont;
       font-weight: $baseFontBold;
-      color: white;
+      color: rgb(26, 26, 26);
       border: none;
     }
   }

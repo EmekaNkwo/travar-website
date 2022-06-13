@@ -38,7 +38,7 @@ function Navbar() {
 
         <div className="hamburger" onClick={handleToggle}>
           {/* eslint-disable-next-line*/}
-          <a href="#"> {toggle ? <FaBars /> : <FaTimes />}</a>
+          <div className="hamIcon"> {toggle ? <FaBars /> : <FaTimes />}</div>
         </div>
       </div>
     </div>

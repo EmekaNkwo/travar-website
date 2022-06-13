@@ -7,6 +7,7 @@
 
 .swiperContainer h1 {
   margin-bottom: 2rem;
+  color: #003580;
 }
 
 .swiperContainer .mySwiper {
@@ -72,7 +73,13 @@
   border-radius: 0.2rem;
 }
 
+.swiperContainer .mySwiper .swiperSlide .swiperItem {
+  display: relative;
+}
+
 .swiperContainer .mySwiper .swiperSlide .swiperItem .swiperItemContent {
+  width: 100%;
+  color: #242424;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +89,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
 }
 
 .swiperContainer .mySwiper .swiperSlide .swiperItem .swiperItemContent .itemLeft {
@@ -140,6 +147,15 @@
   cursor: pointer;
   border-radius: 0.8rem;
   font-size: 1rem;
+  color: #1a1a1a;
   background-color: #e8b40b;
+  cursor: pointer;
+}
+
+.swiperContainer .mySwiper .swiperSlide .swiperItem .swiperItemContent .itemRight button:hover {
+  color: #fff;
+  background-color: #003580;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=PropertyList.css.map */

@@ -76,14 +76,14 @@
     transition: 0.5s;
     z-index: -1;
     text-align: center;
-    background-color: #2a2a2a;
+    background-color: #032b64;
   }
   .navBar .navContainer .hamburger {
     display: block;
   }
-  .navBar .navContainer .hamburger a {
+  .navBar .navContainer .hamburger .hamIcon {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .navBar .navContainer .navList.active {
     right: 0;

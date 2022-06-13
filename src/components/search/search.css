@@ -1,5 +1,5 @@
 .headerSearch {
-  background-color: #04042f;
+  background-color: #003580;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +50,9 @@
 }
 
 .headerSearch .headerSearchItem .headerSearchTitle span {
-  color: #04042f;
+  color: #003580;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .headerSearch .headerSearchItem .headerSearchInput {
@@ -77,7 +79,7 @@
 }
 
 .headerSearch .headerSearchItem .headerIcon {
-  color: #fccc1d;
+  color: #003580;
 }
 
 .headerSearch .headerSearchItem .headerSearchText {
@@ -148,12 +150,12 @@
 
 .headerSearch .headerButton button {
   padding: 1.95rem;
-  background-color: #fccc1d;
+  background-color: #e8b40b;
   border-radius: 0.2rem;
   font-size: 1.2rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  color: white;
+  color: #1a1a1a;
   border: none;
 }
 /*# sourceMappingURL=search.css.map */

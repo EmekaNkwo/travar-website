@@ -25,10 +25,11 @@
 
 .featured .features .featureContent .featureIcon {
   font-size: 2.5rem;
+  color: #003580;
 }
 
 .featured .features .featureContent .featureText p {
-  color: #141414;
+  color: #003580;
   width: 200px;
 }
 /*# sourceMappingURL=Featured.css.map */
